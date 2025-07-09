@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/opt/rpi-4.0b/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc",
+            "intelliSenseMode": "linux-gcc-arm64",
+            "compilerArgs": [
+                "--sysroot=/opt/rpi-4.0b/sysroots/cortexa72-poky-linux",
+                "-Wformat -Wformat-security -Werror=format-security",
+                "-D_FORTIFY_SOURCE=2 ",
+                "_FORTIFY_SOURCE"
+            ]
+        }
+    ],
+    "version": 4
+}

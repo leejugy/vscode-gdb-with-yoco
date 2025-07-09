@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "string.h": "c",
+        "thread.h": "c",
+        "*.conf": "bitbake",
+        "*.inc": "bitbake",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "unistd.h": "c"
+    },
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/sources/poky/bitbake/lib",
+        "${workspaceFolder}/sources/poky/meta/lib"
+    ],
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/sources/poky/bitbake/lib",
+        "${workspaceFolder}/sources/poky/meta/lib"
+    ]
+}
