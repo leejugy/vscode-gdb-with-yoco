@@ -73,6 +73,15 @@ warning 감지를 위한 tasks.json 파일 작성
 	]
 }
 ```
+
+이후 vscode에서
+
+ctrl + p
+
+>를 입력후
+
+Tasks: Run Build Task 실행 시, gcc가 나타내는 모든 경고를 체크할 수 있음
+
 c/c++ 속성 json 파일 변경, 컴파일러 패스, 인텔리센스 모드랑, 컴파일러 arg 설정
 
 compiler arg는 "~$ source yoursdk_dir/environment-setup-xxx" 파일 실행 후 나오는 $CC의 ARG 중에
