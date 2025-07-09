@@ -78,7 +78,7 @@ warning 감지를 위한 tasks.json 파일 작성
 
 ctrl + p
 
->를 입력후
+">" 를 입력후
 
 Tasks: Run Build Task 실행 시, gcc가 나타내는 모든 경고를 체크할 수 있음
 
