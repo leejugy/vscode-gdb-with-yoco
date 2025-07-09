@@ -3,5 +3,5 @@
 int main()
 {
     start_thread();
-    while (1);    
+    while(1);    
 }

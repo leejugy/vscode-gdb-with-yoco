@@ -13,6 +13,14 @@
 
 void start_thread();
 
+typedef struct
+{
+    int test1;
+    int test2;
+    int test3;
+}thread_t;
+
+
 #define printr(fmt,...) printf("[\x1b[31mERR\x1b[0m]"fmt"\n", ##__VA_ARGS__)
 #define printg(fmt,...) printf("[\x1b[32mSUCCESS\x1b[0m]"fmt"\n", ##__VA_ARGS__)
 #define printy(fmt,...) printf("[\x1b[33mSUCCESS\x1b[0m]"fmt"\n", ##__VA_ARGS__)

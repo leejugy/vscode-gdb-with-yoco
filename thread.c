@@ -17,9 +17,18 @@ static void thread2(void *arg)
     (void)arg;
     int a = 0;
     printg("thread2");
+    thread_t thread = {0, };
+    thread_t *thread_p = &thread;
+
     while (1)
     {
         printb("hellow i am thread2 : %d", a++);
+        thread.test1++;
+        thread.test2++;
+        thread.test3++;
+        thread_p->test1--;
+        thread_p->test2--;
+        thread_p->test3--;
         sleep(1);
     }
 }
