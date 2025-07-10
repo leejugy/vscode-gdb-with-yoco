@@ -4,10 +4,16 @@ static void thread1(void *arg)
 {
     (void)arg;
     int a = 0;
+    int *b = NULL;
     printg("thread1");
     while (1)
     {
         printb("hellow i am thread1 : %d", a++);
+        if(a >= 5)
+        {
+            b = &a;
+            *b = 65535;
+        }
         sleep(1);
     }
 }
