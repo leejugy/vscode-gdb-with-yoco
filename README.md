@@ -126,7 +126,7 @@ sysroot 만 넣어주어도 괜찮음
 
 4. set sysroot의 sysroot 디렉토리를 적절히 설정
 
-**c_cpp_properties.json**
+**launch.json**
 
 ```json
 {
