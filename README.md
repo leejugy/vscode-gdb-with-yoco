@@ -171,6 +171,7 @@ sysroot 만 넣어주어도 괜찮음
 
 ```bash
 # 방화벽 1234 포트 열어두기 (윈도우의 경우)
+# 타깃 보드의 랜선 연결된 이더넷 인터페이스 설정
 ifconfig eth0 up
 ifconfig eth0 2.3.4.6
 ifconfig eth0 netmask 255.255.255.0
