@@ -164,11 +164,14 @@ sysroot 만 넣어주어도 괜찮음
 
 ---
 
-# 디버깅을 진행할 원격 접속 서버
+# 디버깅을 진행할 원격 접속 서버 (타겟 보드)
 
-다음 명령어 실행
+호스트 pc와 랜선 연결 후 다음 명령어 실행
 
 ```bash
+~$ ifconfig eth0 up
+~$ ifconfig eth0 2.3.4.6
+~$ ifconfig eth0 netmask 255.255.255.0
 ~$ gdbserver :1234 ./thread
 ```
 
