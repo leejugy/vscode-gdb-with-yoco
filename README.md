@@ -31,13 +31,14 @@ EXTRA_IMAGE_FEATURES:append = " debug-tweaks tools-debug"
 **bash**
 
 ```bash
-~$ bitbake core-image-weston
-~$ bitbake core-image-weston -c do_populate_sdk
+bitbake core-image-weston
+
+bitbake core-image-weston -c do_populate_sdk
 ```
 
 **sdk를 설치**
 ```bash
-~$ your_sdk.sh
+your_sdk.sh
 ```
 
 ---
@@ -166,13 +167,18 @@ sysroot 만 넣어주어도 괜찮음
 
 # 디버깅을 진행할 원격 접속 서버 (타겟 보드)
 
-호스트 pc와 랜선 연결 후 다음 명령어 실행
+호스트 pc와 타겟 보드를 랜선 연결 후 다음 명령어 실행
 
 ```bash
-~$ ifconfig eth0 up
-~$ ifconfig eth0 2.3.4.6
-~$ ifconfig eth0 netmask 255.255.255.0
-~$ gdbserver :1234 ./thread
+# 방화벽 1234 포트 열어두기 (윈도우의 경우)
+ifconfig eth0 up
+ifconfig eth0 2.3.4.6
+ifconfig eth0 netmask 255.255.255.0
+
+# 핑 쏴서 연결된지 확인, 안나가면 타겟 pc 방화벽 설정확인
+ping 2.3.4.5
+
+gdbserver :1234 ./thread
 ```
 
 바이너리 파일 이름만 적당히 바꿔주기
